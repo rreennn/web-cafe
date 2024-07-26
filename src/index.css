@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes spin{
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 40s linear infinite;
+}
+
+.btn{
+  @apply rounded-full py-2 px-3 w-[115px] uppercase text-black text-sm font-bold cursor-pointer tracking-wider hover:bg-black hover:text-white duration-500;
+}
+
+.btn-md{
+  @apply rounded-full py-2 px-3 w-[150px] uppercase text-black text-sm font-bold cursor-pointer tracking-wider hover:bg-black hover:text-white duration-500;
+}
