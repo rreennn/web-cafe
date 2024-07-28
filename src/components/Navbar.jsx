@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <div className="sticky drop-shadow-lg bg-gradient-to-r from-darkshade to-lightshade text-xl p-1 text-gray-300 font-sans flex justify-between">
       <div className="cursor-pointer flex items-center justify-between w-full">
-        <div data-aos="fade-down" data-aos-once="true">
+        <div>
           <img
             src="logo.svg"
             alt="logo"
@@ -23,7 +23,7 @@ function Navbar() {
           />
         </div>
       </div>
-      <ul data-aos="fade-down" data-aos-once="true" className={`md:flex md:items-center z-[-1] md:z-auto md:static absolute md:bg-inherit bg-darkshade w-full md:py-0 py-10 left-0 md:w-auto md:opacity-100 ${open ? 'top-[1px] fixed opacity-100 ' : 'top-[-1000px] opacity-0'} transition-all ease-in duration-200`}>
+      <ul className={`md:flex md:items-center z-[-1] md:z-auto md:static absolute md:bg-inherit bg-darkshade w-full md:py-0 py-10 left-0 md:w-auto md:opacity-100 ${open ? 'top-[1px] fixed opacity-100 ' : 'top-[-1000px] opacity-0'} transition-all ease-in duration-200`}>
         <li className="mx-5 my-6 md:my-0">
           <a href="#home" className="text-lg hover:text-primary font-semibold duration-500">
             Home
