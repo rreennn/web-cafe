@@ -5,6 +5,8 @@ import Menu from "./components/Menu";
 import Banner from "./components/Banner";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Testimonial from "./components/Testimonial";
+import Footer from "./components/Footer";
 
 const App = () => {
   useEffect(() => {
@@ -21,13 +23,15 @@ const App = () => {
         <div className="z-10 fixed w-full">
           <Navbar />
         </div>
-        <div className="pt-[30px] md:pt-0">
+        <div className="">
           <Home />
         </div>
         <div>
           <Menu />
         </div>
         <Banner />
+        <Testimonial />
+        <Footer />
       </div>
     </>
   );

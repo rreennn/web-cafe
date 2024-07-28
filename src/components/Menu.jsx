@@ -1,5 +1,4 @@
 import React from "react";
-import AOS from "aos";
 
 const MenuData = [
   {
@@ -17,7 +16,7 @@ const MenuData = [
     aosDelay: 300,
   },
   {
-    id: 1,
+    id: 3,
     img: "espresso.png",
     name: "Tubruk Coffee",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quod.",
