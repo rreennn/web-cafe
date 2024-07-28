@@ -15,7 +15,10 @@ function Navbar() {
           />
           <span className="font-logo tracking-wider text-2xl">kohi-shop</span>
         </div>
-        <div className="pr-3 flex items-center md:hidden" onClick={() => setOpen(!open)}>
+        <div
+          className="pr-3 flex items-center md:hidden"
+          onClick={() => setOpen(!open)}
+        >
           <img
             className="h-6 inline-block"
             src={open ? "close.svg" : "menu.svg"}
@@ -23,19 +26,32 @@ function Navbar() {
           />
         </div>
       </div>
-      <ul className={`md:flex md:items-center z-[-1] md:z-auto md:static absolute md:bg-inherit bg-darkshade w-full md:py-0 py-10 left-0 md:w-auto md:opacity-100 ${open ? 'top-[1px] fixed opacity-100 ' : 'top-[-1000px] opacity-0'} transition-all ease-in duration-200`}>
+      <ul
+        className={`md:flex md:items-center z-[-1] md:z-auto md:static absolute md:bg-inherit bg-darkshade w-full md:py-0 py-10 left-0 md:w-auto md:opacity-100 ${
+          open ? "top-[1px] fixed opacity-100 " : "top-[-1000px] opacity-0"
+        } transition-all ease-in duration-200`}
+      >
         <li className="mx-5 my-6 md:my-0">
-          <a href="#home" className="text-lg hover:text-primary font-semibold duration-500">
+          <a
+            href="#home"
+            className="text-lg hover:text-primary font-semibold duration-500"
+          >
             Home
           </a>
         </li>
         <li className="mx-5 my-6 md:my-0">
-          <a href="#" className="text-lg hover:text-primary font-semibold duration-500">
+          <a
+            href="#"
+            className="text-lg hover:text-primary font-semibold duration-500"
+          >
             About
           </a>
         </li>
         <li className="mx-5 my-6 md:my-0">
-          <a href="#menu" className="text-lg hover:text-primary font-semibold duration-500">
+          <a
+            href="#menu"
+            className="text-lg hover:text-primary font-semibold duration-500"
+          >
             Menu
           </a>
         </li>
