@@ -75,7 +75,7 @@ const Testimonial = () => {
               {TestimonialData.map((data) => {
                 return (
                   <div className="" key={data.id}>
-                    <div className="flex flex-col gap-4 h-auto rounded-lg drop-shadow-md px-6 py-5 mx-4 bg-gradient-to-b from-primary to-secondary relative">
+                    <div className="min-h-[16rem] flex flex-col gap-4 h-auto rounded-lg drop-shadow-md px-6 py-5 mx-4 bg-gradient-to-b from-primary to-secondary relative">
                       <div className="mb-3">
                         <img
                           src={data.img}
